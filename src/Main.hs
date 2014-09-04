@@ -25,7 +25,7 @@ parse filePath = do
 	inputContents <- BS.readFile filePath
 	case parseCsv inputContents of
 		Right counts ->
-			return $ Right $ V.foldl' (\acc (count, pass) -> whnf $ CF.insertMany pass count acc) CF.empty counts 
+			return $ Right $ V.foldl' (\acc (count, pass) -> CF.insertMany pass count acc) CF.empty counts 
 		Left err -> return $ Left err
 
 parseCsvOptions :: DecodeOptions
