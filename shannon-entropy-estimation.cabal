@@ -57,7 +57,7 @@ executable shannon-entropy-estimation
   -- other-extensions:    
   
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.7 && <4.8, containers==0.5.5.1, bytestring==0.10.4.0, lazy-csv==0.5.*
+  build-depends:       base >=4.7 && <4.8, containers==0.5.5.1, bytestring==0.10.4.0, cassava==0.4.1.0, deepseq==1.3.0.2, vector==0.10.9.1
   
   -- Directories containing source files.
   hs-source-dirs:      src
